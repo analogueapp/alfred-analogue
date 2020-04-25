@@ -21,6 +21,8 @@ def main(wf):
     for planet in result['hello']:
         wf.add_item(title=planet,
                     subtitle=planet,
+		    valid=True,
+                    arg="some arg",
                     icon=ICON_WEB)
 
     # Send the results to Alfred as XML
