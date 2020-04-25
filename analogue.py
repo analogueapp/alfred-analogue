@@ -3,27 +3,32 @@ from workflow import Workflow, ICON_WEB, web
 
 API_KEY = 'your-pinboard-api-key'
 
-
 def main(wf):
-    url = 'https://pysrv.now.sh/'
-    # params = dict(auth_token=API_KEY, count=20, format='json')
-    r = web.get(url)
+    url = 'https://www.analogue.app/api/logs'
+    params = dict(
+	username='hugh', 
+	tag='',
+	limit=10,
+	offset=0,
+	collection=True
+    )
+    r = web.get(url, params)
 
     # throw an error if request failed
     # Workflow will catch this and show it to the user
     r.raise_for_status()
 
     # Parse the JSON returned by pinboard and extract the posts
-    result = r.json()
+    result = r.json()['data']
 
     # Loop through the returned posts and add an item for each to
     # the list of results for Alfred
-    for planet in result['hello']:
-        wf.add_item(title=planet,
-                    subtitle=planet,
+    for log in result:
+        wf.add_item(title=log['content']['title'],
+                    subtitle=log['content']['excerpt'],
 		    valid=True,
-                    arg="some arg",
-                    icon=ICON_WEB)
+                    arg="https://analogue.app/link/{}/@hugh".format(log['content']['slug']),
+                    icon=log['content']['imageUrl'])
 
     # Send the results to Alfred as XML
     wf.send_feedback()

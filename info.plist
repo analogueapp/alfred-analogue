@@ -8,6 +8,45 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>6A6DB700-F985-43B3-B94F-9221CAB565B3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>26623CD8-D50F-4C1B-9687-27CB2D16F0CF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7C8E1972-4050-44C6-98E2-82B786BF5A3C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CE1A1383-07C6-455C-8D31-CFE7946BDBA2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CC8EAC3E-5E24-44A9-A8B3-3A5E76080AD0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B3F2AD8C-5C48-43E2-A3FC-F8432B4E2462</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>D85FC4D3-B2C3-4574-A8E2-02496B56360B</key>
 		<array>
 			<dict>
@@ -75,6 +114,105 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>analogue profile</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Goto analogue profile</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>CC8EAC3E-5E24-44A9-A8B3-3A5E76080AD0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://analogue.app/@{var:username}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>B3F2AD8C-5C48-43E2-A3FC-F8432B4E2462</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://analogue.app/activity</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>26623CD8-D50F-4C1B-9687-27CB2D16F0CF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>analogue activity</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Check analogue actvity</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>6A6DB700-F985-43B3-B94F-9221CAB565B3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>CE1A1383-07C6-455C-8D31-CFE7946BDBA2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -126,6 +264,13 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>26623CD8-D50F-4C1B-9687-27CB2D16F0CF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>285</integer>
+			<key>ypos</key>
+			<integer>295</integer>
+		</dict>
 		<key>58264603-EF39-46CD-80AE-7BF464FEB4E0</key>
 		<dict>
 			<key>xpos</key>
@@ -133,12 +278,40 @@
 			<key>ypos</key>
 			<integer>30</integer>
 		</dict>
+		<key>6A6DB700-F985-43B3-B94F-9221CAB565B3</key>
+		<dict>
+			<key>xpos</key>
+			<integer>70</integer>
+			<key>ypos</key>
+			<integer>295</integer>
+		</dict>
 		<key>7C8E1972-4050-44C6-98E2-82B786BF5A3C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>85</integer>
+			<integer>75</integer>
 			<key>ypos</key>
-			<integer>195</integer>
+			<integer>490</integer>
+		</dict>
+		<key>B3F2AD8C-5C48-43E2-A3FC-F8432B4E2462</key>
+		<dict>
+			<key>xpos</key>
+			<integer>280</integer>
+			<key>ypos</key>
+			<integer>175</integer>
+		</dict>
+		<key>CC8EAC3E-5E24-44A9-A8B3-3A5E76080AD0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>70</integer>
+			<key>ypos</key>
+			<integer>175</integer>
+		</dict>
+		<key>CE1A1383-07C6-455C-8D31-CFE7946BDBA2</key>
+		<dict>
+			<key>xpos</key>
+			<integer>290</integer>
+			<key>ypos</key>
+			<integer>485</integer>
 		</dict>
 		<key>D85FC4D3-B2C3-4574-A8E2-02496B56360B</key>
 		<dict>
@@ -148,6 +321,17 @@
 			<integer>30</integer>
 		</dict>
 	</dict>
+	<key>variables</key>
+	<dict>
+		<key>username</key>
+		<string>hugh</string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>username</string>
+	</array>
+	<key>version</key>
+	<string></string>
 	<key>webaddress</key>
 	<string>https://analogue.app</string>
 </dict>
