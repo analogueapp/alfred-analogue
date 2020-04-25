@@ -98,9 +98,9 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string></string>
+				<string>grabbing data</string>
 				<key>script</key>
-				<string>python alfred_analogue.py</string>
+				<string>python analogue.py</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -117,7 +117,7 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>EE2805A0-DAB5-43D6-A8CB-46CDA7F66171</string>
+			<string>7C8E1972-4050-44C6-98E2-82B786BF5A3C</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -133,19 +133,19 @@
 			<key>ypos</key>
 			<integer>30</integer>
 		</dict>
+		<key>7C8E1972-4050-44C6-98E2-82B786BF5A3C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>85</integer>
+			<key>ypos</key>
+			<integer>195</integer>
+		</dict>
 		<key>D85FC4D3-B2C3-4574-A8E2-02496B56360B</key>
 		<dict>
 			<key>xpos</key>
 			<integer>75</integer>
 			<key>ypos</key>
 			<integer>30</integer>
-		</dict>
-		<key>EE2805A0-DAB5-43D6-A8CB-46CDA7F66171</key>
-		<dict>
-			<key>xpos</key>
-			<integer>85</integer>
-			<key>ypos</key>
-			<integer>185</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
