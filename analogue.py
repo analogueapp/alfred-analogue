@@ -5,6 +5,7 @@ API_KEY = 'your-pinboard-api-key'
 
 def main(wf):
     url = 'https://www.analogue.app/api/logs'
+    # Todo: Get username via the env config or using auth
     params = dict(
 	username='hugh', 
 	tag='',
@@ -24,10 +25,11 @@ def main(wf):
     # Loop through the returned posts and add an item for each to
     # the list of results for Alfred
     for log in result:
+        # The user is tagged in the url query action
         wf.add_item(title=log['content']['title'],
                     subtitle=log['content']['excerpt'],
 		    valid=True,
-                    arg="https://analogue.app/link/{}/@hugh".format(log['content']['slug']),
+                    arg="https://analogue.app/link/{}/".format(log['content']['slug']),
                     icon=log['content']['imageUrl'])
 
     # Send the results to Alfred as XML
