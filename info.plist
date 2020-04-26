@@ -34,6 +34,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>AE0A1DBE-A6DC-4496-AB72-F19CE5E69D35</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>38827925-9108-4457-924E-1C1AA1518DE1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>CC8EAC3E-5E24-44A9-A8B3-3A5E76080AD0</key>
 		<array>
 			<dict>
@@ -110,6 +123,74 @@
 			<string>58264603-EF39-46CD-80AE-7BF464FEB4E0</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>38827925-9108-4457-924E-1C1AA1518DE1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>analogue search</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Grabbing contents.....</string>
+				<key>script</key>
+				<string>python search.py "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>analogue search</string>
+				<key>title</key>
+				<string>analogue search</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>AE0A1DBE-A6DC-4496-AB72-F19CE5E69D35</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -271,6 +352,13 @@
 			<key>ypos</key>
 			<integer>295</integer>
 		</dict>
+		<key>38827925-9108-4457-924E-1C1AA1518DE1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>650</integer>
+			<key>ypos</key>
+			<integer>105</integer>
+		</dict>
 		<key>58264603-EF39-46CD-80AE-7BF464FEB4E0</key>
 		<dict>
 			<key>xpos</key>
@@ -291,6 +379,13 @@
 			<integer>75</integer>
 			<key>ypos</key>
 			<integer>435</integer>
+		</dict>
+		<key>AE0A1DBE-A6DC-4496-AB72-F19CE5E69D35</key>
+		<dict>
+			<key>xpos</key>
+			<integer>465</integer>
+			<key>ypos</key>
+			<integer>105</integer>
 		</dict>
 		<key>B3F2AD8C-5C48-43E2-A3FC-F8432B4E2462</key>
 		<dict>
