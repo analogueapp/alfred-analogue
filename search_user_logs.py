@@ -1,12 +1,10 @@
 import sys
 from workflow import Workflow, ICON_WEB, web
-from lib import Analogue
-
-client = Analogue()
+from lib import search_user_logs
 
 def main(wf):
     # Get current user logs
-    result = client.search_user_logs()
+    result = search_user_logs()
     
     # Loop through the returned posts and add an item for each to
     # the list of results for Alfred

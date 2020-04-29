@@ -1,5 +1,6 @@
 import sys
 from workflow import Workflow, ICON_WEB, web
+from lib import Analogue
 
 def main(wf):
 	     # Get query from Alfred
