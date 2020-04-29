@@ -2,18 +2,21 @@ import sys
 from workflow import Workflow, ICON_WEB, web
 
 class Analogue:
-    def search_user_logs(wf):
+    def __init__(self):
+        pass
+
+    def search_user_logs(self):
         """
         search current user logs/content
         """
         url = 'https://www.analogue.app/api/logs'
         # Todo: Get username via the env config or using auth
         params = dict(
-	        username='hugh', 
-	        tag='',
-	        limit=10,
-	        offset=0,
-	        collection=True
+            username='hugh', 
+            tag='',
+            limit=10,
+            offset=0,
+            collection=True
         )
         r = web.get(url, params)
 
@@ -24,26 +27,10 @@ class Analogue:
         # Parse the JSON returned by pinboard and extract the posts
         result = r.json()['data']
 
-        # Loop through the returned posts and add an item for each to
-        # the list of results for Alfred
-        for log in result:
-        
-        # The user is tagged in the url query action
-        wf.add_item(title=log['content']['title'],
-                    subtitle=log['content']['excerpt'],
-		    valid=True,
-                    arg="https://analogue.app/link/{}/".format(log['content']['slug']),
-                    icon=log['content']['imageUrl'])
+        return result
 
-        # Send the results to Alfred as XML
-        wf.send_feedback()
-
-	
-    def search_analogue():
-	"""
-	Search all of analogue for a specific piece of content
-    """
-		pass
-
-
-    
+    def search_analogue(self):
+        """
+	    Search all of analogue for a specific piece of content
+        """
+        pass

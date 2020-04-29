@@ -300,7 +300,7 @@
 				<key>runningsubtext</key>
 				<string>grabbing data</string>
 				<key>script</key>
-				<string>python analogue.py</string>
+				<string>python search_user_logs.py</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
