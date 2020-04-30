@@ -87,6 +87,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://analogue.app</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>58264603-EF39-46CD-80AE-7BF464FEB4E0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -102,25 +121,6 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>D85FC4D3-B2C3-4574-A8E2-02496B56360B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://analogue.app</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>58264603-EF39-46CD-80AE-7BF464FEB4E0</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -300,7 +300,7 @@
 				<key>runningsubtext</key>
 				<string>grabbing data</string>
 				<key>script</key>
-				<string>python analogue.py</string>
+				<string>python search_user_logs.py</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -418,6 +418,8 @@
 	</dict>
 	<key>variables</key>
 	<dict>
+		<key>password</key>
+		<string>hugghuha</string>
 		<key>username</key>
 		<string>hugh</string>
 	</dict>
