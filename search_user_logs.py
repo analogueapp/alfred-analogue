@@ -15,7 +15,7 @@ def main(wf):
             title=log["content"]["title"],
             subtitle=log["content"]["excerpt"],
             valid=True,
-            arg="https://analogue.app/link/{}/".format(log["content"]["slug"]),
+            arg="https://analogue.app/{}/{}/".format(log["content"]["formSlug"], log["content"]["slug"]),
             icon=log["content"]["imageUrl"],
         )
 

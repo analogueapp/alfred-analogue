@@ -17,7 +17,7 @@ def main(wf):
             title=hit["title"],
             subtitle=hit["excerpt"],
             valid=True,
-            arg="https://analogue.app/link/{}/".format(hit["slug"]),
+            arg="https://analogue.app/{}/{}/".format(hit["form_slug"],hit["slug"]),
             icon=hit["image_url"],
         )
 
