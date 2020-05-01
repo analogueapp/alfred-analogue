@@ -1,5 +1,5 @@
 import sys
-from workflow import Workflow, ICON_WARNING
+from workflow import Workflow, ICON_FILES
 from workflow.background import run_in_background, is_running
 
 from lib import search_analogue
@@ -25,7 +25,8 @@ def main(wf):
 
     if not results:
         wf.add_item('No results found for "%s".' % query,
-                    'Try a different query or add a link.')
+                    'Try a different query or add a link.',
+                    icon=ICON_FILES)
 
     thumbs = Thumbs(wf.datafile('thumbs'))
     for hit in results:
