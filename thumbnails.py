@@ -13,6 +13,7 @@
 
 from __future__ import print_function, unicode_literals, absolute_import
 
+import urllib
 import logging
 import hashlib
 import os
@@ -138,9 +139,9 @@ class Thumbs(object):
                     line = line.strip()
                     if not line:
                         continue
-                    if not os.path.exists(line):
-                        log.debug('File does not exist : %r', line)
-                        continue
+                    # if not os.path.exists(line):
+                    #     log.debug('File does not exist : %r', line)
+                    #     continue
                     queue.append(line)
             # Clear queue file
             with atomic_writer(self._queue_path, 'wb') as fp:
@@ -170,21 +171,7 @@ class Thumbs(object):
         except OSError:  # path exists
             pass
 
-        cmd = [
-            '/usr/local/bin/gm',
-            'convert',
-            '-thumbnail', '256x256>',
-            '-background', 'transparent',
-            '-gravity', 'center',
-            '-extent', '256x256',
-            img_path, thumb_path
-        ]
-
-        retcode = subprocess.call(cmd)
-
-        if retcode:
-            log.error('convert exited with %d : %s', retcode, img_path)
-            return False
+        urllib.urlretrieve(img_path, thumb_path)
 
         log.debug('Wrote thumbnail for `%s` to `%s`.', img_path, thumb_path)
 

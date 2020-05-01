@@ -8,8 +8,8 @@ from thumbnails import Thumbs
 # import logging
 from datetime import date, datetime
 import time
-
 log = None
+
 
 def main(wf):
     if len(wf.args):
@@ -29,6 +29,7 @@ def main(wf):
                     icon=ICON_FILES)
 
     thumbs = Thumbs(wf.datafile('thumbs'))
+
     for hit in results:
         wf.add_item(
             title = hit['title'],
@@ -45,10 +46,11 @@ def main(wf):
     # Handle thumbnail queue
     thumbs.save_queue()
     if thumbs.has_queue:
-        if not is_running('generate_thumbnails'):
-            run_in_background('generate_thumbnails',
-                              ['/usr/bin/python',
-                               wf.workflowfile('thumbnails.py')])
+        thumbs.process_queue()
+        # if not is_running('generate_thumbnails'):
+        #     run_in_background('generate_thumbnails',
+        #                       ['/usr/bin/python',
+        #                        wf.workflowfile('thumbnails.py')])
 
     return 0
 
