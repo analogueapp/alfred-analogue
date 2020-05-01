@@ -47,8 +47,6 @@ def get_token(email, password):
     """
     Get user token for API calls
     """
-    
-    url="https://www.analogue.app/api/users/login"
     r = web.post(
         url="https://www.analogue.app/api/users/login",
         params=None,
