@@ -9,7 +9,6 @@ from datetime import date, datetime
 import time
 log = None
 
-
 def main(wf):
     if len(wf.args):
         query = wf.args[0]

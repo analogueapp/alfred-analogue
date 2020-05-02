@@ -1,11 +1,11 @@
 import sys
 from workflow import Workflow, ICON_WEB, web
 from lib import search_user_logs
-
+from enums import ANALOGUE_USERNAME
 
 def main(wf):
     # Get current user logs
-    result = search_user_logs()
+    result = search_user_logs(wf.get_password(ANALOGUE_USERNAME))
 
     # Loop through the returned posts and add an item for each to
     # the list of results for Alfred
