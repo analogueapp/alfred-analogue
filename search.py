@@ -5,7 +5,6 @@ from workflow.background import run_in_background, is_running
 from lib import search_analogue
 from thumbnails import Thumbs
 
-# import logging
 from datetime import date, datetime
 import time
 log = None
@@ -40,13 +39,12 @@ def main(wf):
             icontype = None
         )
 
-    # Send the results to Alfred as XML
     wf.send_feedback()
 
-    # Handle thumbnail queue
     thumbs.save_queue()
     if thumbs.has_queue:
         thumbs.process_queue()
+        # TODO run in background
         # if not is_running('generate_thumbnails'):
         #     run_in_background('generate_thumbnails',
         #                       ['/usr/bin/python',
