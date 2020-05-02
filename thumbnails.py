@@ -139,11 +139,7 @@ class Thumbs(object):
                     line = line.strip()
                     if not line:
                         continue
-                    # if not os.path.exists(line):
-                    #     log.debug('File does not exist : %r', line)
-                    #     continue
                     queue.append(line)
-            # Clear queue file
             with atomic_writer(self._queue_path, 'wb') as fp:
                 fp.write('')
 
@@ -168,7 +164,7 @@ class Thumbs(object):
         dirpath = os.path.dirname(thumb_path)
         try:
             os.makedirs(dirpath)
-        except OSError:  # path exists
+        except OSError:
             pass
 
         urllib.urlretrieve(img_path, thumb_path)
