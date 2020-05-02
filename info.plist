@@ -8,6 +8,19 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>1BD39F55-BA8C-424F-929F-4CB8B5D29344</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7D1731F6-9942-434E-86B2-86443C453F44</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>6A6DB700-F985-43B3-B94F-9221CAB565B3</key>
 		<array>
 			<dict>
@@ -253,7 +266,10 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>python auth.py</string>
+				<string>set +H
+python auth.py {var: email} {var:password}
+# python auth.py hughmil3s@gmail.com test
+echo -n "username here"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -326,6 +342,27 @@
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
 			<string>26623CD8-D50F-4C1B-9687-27CB2D16F0CF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Successfully logged into {var:email}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>7D1731F6-9942-434E-86B2-86443C453F44</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -407,7 +444,7 @@
 			<key>xpos</key>
 			<integer>660</integer>
 			<key>ypos</key>
-			<integer>240</integer>
+			<integer>245</integer>
 		</dict>
 		<key>26623CD8-D50F-4C1B-9687-27CB2D16F0CF</key>
 		<dict>
@@ -443,6 +480,13 @@
 			<integer>75</integer>
 			<key>ypos</key>
 			<integer>435</integer>
+		</dict>
+		<key>7D1731F6-9942-434E-86B2-86443C453F44</key>
+		<dict>
+			<key>xpos</key>
+			<integer>670</integer>
+			<key>ypos</key>
+			<integer>410</integer>
 		</dict>
 		<key>AE0A1DBE-A6DC-4496-AB72-F19CE5E69D35</key>
 		<dict>
@@ -482,22 +526,18 @@
 		<key>E634CC64-C6DD-46DD-8766-F014863DB364</key>
 		<dict>
 			<key>xpos</key>
-			<integer>465</integer>
+			<integer>455</integer>
 			<key>ypos</key>
 			<integer>245</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
 	<dict>
+		<key>email</key>
+		<string>hughmil3s@gmail.com</string>
 		<key>password</key>
-		<string>hugghuha</string>
-		<key>username</key>
-		<string>hugh</string>
+		<string>kd3k.f*.NwtR!dV6r4X2</string>
 	</dict>
-	<key>variablesdontexport</key>
-	<array>
-		<string>username</string>
-	</array>
 	<key>version</key>
 	<string></string>
 	<key>webaddress</key>
