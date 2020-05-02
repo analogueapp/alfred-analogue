@@ -73,6 +73,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>E634CC64-C6DD-46DD-8766-F014863DB364</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1BD39F55-BA8C-424F-929F-4CB8B5D29344</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Joel and Hugh</string>
@@ -84,25 +97,6 @@
 	<string>Analogue</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://analogue.app</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>58264603-EF39-46CD-80AE-7BF464FEB4E0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -121,6 +115,25 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>D85FC4D3-B2C3-4574-A8E2-02496B56360B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://analogue.app</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>58264603-EF39-46CD-80AE-7BF464FEB4E0</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -235,19 +248,44 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>python auth.py</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
 				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://analogue.app/activity</string>
-				<key>utf8</key>
-				<true/>
+				<key>type</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>26623CD8-D50F-4C1B-9687-27CB2D16F0CF</string>
+			<string>1BD39F55-BA8C-424F-929F-4CB8B5D29344</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>analogue auth</string>
+				<key>subtext</key>
+				<string>analogue auth</string>
+				<key>text</key>
+				<string>analogue auth</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>E634CC64-C6DD-46DD-8766-F014863DB364</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -269,6 +307,25 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>6A6DB700-F985-43B3-B94F-9221CAB565B3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://analogue.app/activity</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>26623CD8-D50F-4C1B-9687-27CB2D16F0CF</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -345,6 +402,13 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>1BD39F55-BA8C-424F-929F-4CB8B5D29344</key>
+		<dict>
+			<key>xpos</key>
+			<integer>660</integer>
+			<key>ypos</key>
+			<integer>240</integer>
+		</dict>
 		<key>26623CD8-D50F-4C1B-9687-27CB2D16F0CF</key>
 		<dict>
 			<key>xpos</key>
@@ -414,6 +478,13 @@
 			<integer>75</integer>
 			<key>ypos</key>
 			<integer>30</integer>
+		</dict>
+		<key>E634CC64-C6DD-46DD-8766-F014863DB364</key>
+		<dict>
+			<key>xpos</key>
+			<integer>465</integer>
+			<key>ypos</key>
+			<integer>245</integer>
 		</dict>
 	</dict>
 	<key>variables</key>

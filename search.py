@@ -2,7 +2,6 @@ import sys
 from workflow import Workflow, ICON_WEB, web
 from lib import search_analogue
 
-
 def main(wf):
     if len(wf.args):
         query = wf.args[0]

@@ -3,13 +3,13 @@ import json
 from workflow import Workflow, ICON_WEB, web
 
 
-def search_user_logs():
+def search_user_logs(username):
     """
     search current user logs/content
     """
     url = "https://www.analogue.app/api/logs"
     # Todo: Get username via the env config or using auth
-    params = dict(username="hugh", tag="", limit=10, offset=0, collection=True)
+    params = dict(username=username, tag="", limit=10, offset=0, collection=True)
     r = web.get(url, params)
 
     # throw an error if request failed
@@ -74,4 +74,4 @@ def get_token(email, password):
         data=json.dumps({"user": {"email": email, "password": password}}),
     )
 
-    return r.json()["user"]["token"]
+    return r.json()["user"]["token"], r.json()['user']['username']
