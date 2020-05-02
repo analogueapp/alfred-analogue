@@ -44,8 +44,8 @@ except ImportError:  # pragma: no cover
     import xml.etree.ElementTree as ET
 
 # imported to maintain API
-from .util import AcquisitionError  # noqa: F401
-from .util import (
+from util import AcquisitionError  # noqa: F401
+from util import (
     atomic_writer,
     LockFile,
     uninterruptible,
@@ -80,12 +80,14 @@ ICON_EJECT = os.path.join(ICON_ROOT, "EjectMediaIcon.icns")
 ICON_ERROR = os.path.join(ICON_ROOT, "AlertStopIcon.icns")
 ICON_FAVORITE = os.path.join(ICON_ROOT, "ToolbarFavoritesIcon.icns")
 ICON_FAVOURITE = ICON_FAVORITE
+ICON_FILES = os.path.join(ICON_ROOT, "AllMyFiles.icns")
 ICON_GROUP = os.path.join(ICON_ROOT, "GroupIcon.icns")
 ICON_HELP = os.path.join(ICON_ROOT, "HelpIcon.icns")
 ICON_HOME = os.path.join(ICON_ROOT, "HomeFolderIcon.icns")
 ICON_INFO = os.path.join(ICON_ROOT, "ToolbarInfo.icns")
 ICON_NETWORK = os.path.join(ICON_ROOT, "GenericNetworkIcon.icns")
 ICON_NOTE = os.path.join(ICON_ROOT, "AlertNoteIcon.icns")
+ICON_SEARCH = os.path.join(ICON_ROOT, "MagnifyingGlassIcon.icns")
 ICON_SETTINGS = os.path.join(ICON_ROOT, "ToolbarAdvanced.icns")
 ICON_SWIRL = os.path.join(ICON_ROOT, "ErasingIcon.icns")
 ICON_SWITCH = os.path.join(ICON_ROOT, "General.icns")

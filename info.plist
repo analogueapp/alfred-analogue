@@ -87,25 +87,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://analogue.app</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>58264603-EF39-46CD-80AE-7BF464FEB4E0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -121,6 +102,25 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>D85FC4D3-B2C3-4574-A8E2-02496B56360B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://analogue.app</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>58264603-EF39-46CD-80AE-7BF464FEB4E0</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -169,7 +169,7 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>Grabbing contents.....</string>
+				<string>Searching Analogue...</string>
 				<key>script</key>
 				<string>python search.py "{query}"</string>
 				<key>scriptargtype</key>
@@ -177,9 +177,9 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>analogue search</string>
+				<string>Start typing to search for content on Analogue</string>
 				<key>title</key>
-				<string>analogue search</string>
+				<string>Search Analogue</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -342,7 +342,21 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>Web Site:
+
+http://analogue.app/alfred
+
+Twitter Account:
+
+@analogue_app
+
+Github page:
+
+https://github.com/analogue-app/alfred-analogue
+
+Packal Page:
+
+http://www.packal.org/workflow/alfred-analogue</string>
 	<key>uidata</key>
 	<dict>
 		<key>26623CD8-D50F-4C1B-9687-27CB2D16F0CF</key>
@@ -428,7 +442,7 @@
 		<string>username</string>
 	</array>
 	<key>version</key>
-	<string></string>
+	<string>1.0</string>
 	<key>webaddress</key>
 	<string>https://analogue.app</string>
 </dict>
