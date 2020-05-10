@@ -60,6 +60,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>B8760751-7197-4E49-970F-5F73BBF67CAF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>38827925-9108-4457-924E-1C1AA1518DE1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>CC8EAC3E-5E24-44A9-A8B3-3A5E76080AD0</key>
 		<array>
 			<dict>
@@ -110,6 +123,55 @@
 	<string>Analogue</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>analogue users</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Grabbing users information</string>
+				<key>script</key>
+				<string>python search_users.py "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>analogue users</string>
+				<key>title</key>
+				<string>analogue users</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>B8760751-7197-4E49-970F-5F73BBF67CAF</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -172,6 +234,46 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>analogue profile</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Goto analogue profile</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>CC8EAC3E-5E24-44A9-A8B3-3A5E76080AD0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://analogue.app/@{var:username}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>B3F2AD8C-5C48-43E2-A3FC-F8432B4E2462</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -224,93 +326,6 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>analogue profile</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Goto analogue profile</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>CC8EAC3E-5E24-44A9-A8B3-3A5E76080AD0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://analogue.app/@{var:username}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>B3F2AD8C-5C48-43E2-A3FC-F8432B4E2462</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>set +H
-python auth.py {var: email} {var:password}
-# python auth.py hughmil3s@gmail.com test
-echo -n "username here"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>1BD39F55-BA8C-424F-929F-4CB8B5D29344</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>analogue auth</string>
-				<key>subtext</key>
-				<string>analogue auth</string>
-				<key>text</key>
-				<string>analogue auth</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>E634CC64-C6DD-46DD-8766-F014863DB364</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
 				<string>analogue activity</string>
 				<key>subtext</key>
 				<string></string>
@@ -348,6 +363,32 @@ echo -n "username here"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>set +H
+python auth.py {var: email} {var:password}
+# python auth.py hughmil3s@gmail.com test
+echo -n "username here"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>1BD39F55-BA8C-424F-929F-4CB8B5D29344</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -363,6 +404,27 @@ echo -n "username here"</string>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>7D1731F6-9942-434E-86B2-86443C453F44</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>analogue auth</string>
+				<key>subtext</key>
+				<string>analogue auth</string>
+				<key>text</key>
+				<string>analogue auth</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>E634CC64-C6DD-46DD-8766-F014863DB364</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -456,9 +518,9 @@ http://www.packal.org/workflow/alfred-analogue</string>
 		<key>1BD39F55-BA8C-424F-929F-4CB8B5D29344</key>
 		<dict>
 			<key>xpos</key>
-			<integer>660</integer>
+			<integer>650</integer>
 			<key>ypos</key>
-			<integer>245</integer>
+			<integer>415</integer>
 		</dict>
 		<key>26623CD8-D50F-4C1B-9687-27CB2D16F0CF</key>
 		<dict>
@@ -470,9 +532,9 @@ http://www.packal.org/workflow/alfred-analogue</string>
 		<key>38827925-9108-4457-924E-1C1AA1518DE1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>650</integer>
+			<integer>715</integer>
 			<key>ypos</key>
-			<integer>105</integer>
+			<integer>95</integer>
 		</dict>
 		<key>58264603-EF39-46CD-80AE-7BF464FEB4E0</key>
 		<dict>
@@ -498,16 +560,16 @@ http://www.packal.org/workflow/alfred-analogue</string>
 		<key>7D1731F6-9942-434E-86B2-86443C453F44</key>
 		<dict>
 			<key>xpos</key>
-			<integer>670</integer>
+			<integer>815</integer>
 			<key>ypos</key>
-			<integer>410</integer>
+			<integer>415</integer>
 		</dict>
 		<key>AE0A1DBE-A6DC-4496-AB72-F19CE5E69D35</key>
 		<dict>
 			<key>xpos</key>
-			<integer>465</integer>
+			<integer>475</integer>
 			<key>ypos</key>
-			<integer>105</integer>
+			<integer>170</integer>
 		</dict>
 		<key>B3F2AD8C-5C48-43E2-A3FC-F8432B4E2462</key>
 		<dict>
@@ -515,6 +577,13 @@ http://www.packal.org/workflow/alfred-analogue</string>
 			<integer>280</integer>
 			<key>ypos</key>
 			<integer>160</integer>
+		</dict>
+		<key>B8760751-7197-4E49-970F-5F73BBF67CAF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>475</integer>
+			<key>ypos</key>
+			<integer>25</integer>
 		</dict>
 		<key>CC8EAC3E-5E24-44A9-A8B3-3A5E76080AD0</key>
 		<dict>
@@ -540,9 +609,9 @@ http://www.packal.org/workflow/alfred-analogue</string>
 		<key>E634CC64-C6DD-46DD-8766-F014863DB364</key>
 		<dict>
 			<key>xpos</key>
-			<integer>455</integer>
+			<integer>490</integer>
 			<key>ypos</key>
-			<integer>245</integer>
+			<integer>430</integer>
 		</dict>
 	</dict>
 	<key>variables</key>

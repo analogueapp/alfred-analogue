@@ -2,7 +2,7 @@ import sys
 from workflow import Workflow, ICON_FILES
 from workflow.background import run_in_background, is_running
 
-from lib import search_analogue
+from lib import search_analogue_users
 from thumbnails import Thumbs
 
 from datetime import date, datetime
@@ -17,7 +17,7 @@ def main(wf):
 
     log.debug('query : %r', query)
 
-    results = search_analogue(query=query)
+    results = search_analogue_users(query=query)
 
     log.debug('%d results.', len(results))
 
@@ -30,10 +30,10 @@ def main(wf):
 
     for hit in results:
         wf.add_item(
-            title = hit['title'],
-            subtitle = hit['excerpt'],
+            title = hit['name'],
+            subtitle = hit['username'],
             valid = True,
-            arg = 'https://analogue.app/{}/{}/'.format(hit['form_slug'],hit['slug']),
+            arg = 'https://www.analogue.app/@{}'.format(hit['username']),
             icon = thumbs.thumbnail(hit.get('image_url')),
             icontype = None
         )
