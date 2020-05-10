@@ -153,7 +153,7 @@
 				<key>script</key>
 				<string>python search_users.py "{query}"</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
@@ -532,9 +532,9 @@ http://www.packal.org/workflow/alfred-analogue</string>
 		<key>38827925-9108-4457-924E-1C1AA1518DE1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>715</integer>
+			<integer>685</integer>
 			<key>ypos</key>
-			<integer>95</integer>
+			<integer>105</integer>
 		</dict>
 		<key>58264603-EF39-46CD-80AE-7BF464FEB4E0</key>
 		<dict>

@@ -12,11 +12,9 @@ def search_user_logs(username):
     params = dict(username=username, tag="", limit=10, offset=0, collection=True)
     r = web.get(url, params)
 
-    # throw an error if request failed
     # Workflow will catch this and show it to the user
     r.raise_for_status()
 
-    # Parse the JSON returned by pinboard and extract the posts
     result = r.json()["data"]
 
     return result

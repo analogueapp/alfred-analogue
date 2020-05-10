@@ -10,7 +10,7 @@ import time
 log = None
 
 def main(wf):
-    if len(wf.args):
+    if wf.args:
         query = wf.args[0]
     else:
         query = None
