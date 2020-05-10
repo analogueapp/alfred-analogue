@@ -57,7 +57,6 @@ def search_analogue_users(query):
     # Workflow will catch this and show it to the user
     r.raise_for_status()
 
-    # Parse the JSON returned by pinboard and extract the posts
     result = r.json()["hits"]
 
     return result    
