@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>1CC619E3-B2D4-4A1F-97FB-648FACD67557</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CE1A1383-07C6-455C-8D31-CFE7946BDBA2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>6A6DB700-F985-43B3-B94F-9221CAB565B3</key>
 		<array>
 			<dict>
@@ -496,6 +509,55 @@ echo -n "username here"</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>analogue collections</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Grabbing collections</string>
+				<key>script</key>
+				<string>python get_collections.py </string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Analogue collections</string>
+				<key>title</key>
+				<string>Analogue collections</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>1CC619E3-B2D4-4A1F-97FB-648FACD67557</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Web Site:
@@ -521,6 +583,13 @@ http://www.packal.org/workflow/alfred-analogue</string>
 			<integer>650</integer>
 			<key>ypos</key>
 			<integer>415</integer>
+		</dict>
+		<key>1CC619E3-B2D4-4A1F-97FB-648FACD67557</key>
+		<dict>
+			<key>xpos</key>
+			<integer>70</integer>
+			<key>ypos</key>
+			<integer>570</integer>
 		</dict>
 		<key>26623CD8-D50F-4C1B-9687-27CB2D16F0CF</key>
 		<dict>

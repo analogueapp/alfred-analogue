@@ -19,6 +19,22 @@ def search_user_logs(username):
 
     return result
 
+def get_collections(username):
+    """
+    search current user logs/content
+    """
+    url = "https://www.analogue.app/api/primers"
+    # Todo: Get username via the env config or using auth
+    params = dict(username=username, tag="", limit=10, offset=0)
+    r = web.get(url, params)
+
+    # Workflow will catch this and show it to the user
+    r.raise_for_status()
+    
+    result = r.json()["data"]
+
+    return result
+
 
 def search_analogue(query):
     """
