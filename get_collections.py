@@ -1,18 +1,27 @@
 import sys
 from workflow import Workflow, ICON_WEB, web
 from lib import get_collections
+from thumbnails import Thumbs
+from enums import ANALOGUE_USERNAME
 
 def main(wf):
     # Get users collections
-    result = get_collections()
+    results = get_collections(wf.get_password(ANALOGUE_USERNAME))
 
-    for title in result:
+    if not results:
+        wf.add_item('No results found for "%s".' % query,
+                    'Try a different query or add a link.',
+                    icon=ICON_FILES)
+
+    thumbs = Thumbs(wf.datafile('thumbs'))
+
+    for collection in results:
         # The user is tagged in the url query action
         wf.add_item(
-            title=title,
-            subtitle='test',
+            title=collection['title'],
+            subtitle=collection['description'],
             valid=True,
-            arg='test' # test
+            arg = 'https://www.analogue.app/collection/{}'.format(collection['slug']),
         )
 
     # Send the results to Alfred as XML
