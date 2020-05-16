@@ -97,11 +97,11 @@ def get_token(email, password):
     return r.json()["user"]["token"], r.json()["user"]["username"]
 
 
-def add_log():
+def add_log(log_url):
     """
-    Get user token for API calls
+    Create a log
     """
-    url = urllib.quote("https://www.youtube.com/watch?v=5-jKIbCMkyA")
+    url = urllib.quote(log_url)
     r = web.post(
         url="https://www.analogue.app/api/contents/parse?url={}".format(url),
         params=None,
