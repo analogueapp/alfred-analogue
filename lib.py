@@ -1,3 +1,4 @@
+import urllib
 import sys
 import json
 from workflow import Workflow, ICON_WEB, web
@@ -100,8 +101,9 @@ def add_log():
     """
     Get user token for API calls
     """
+    url = urllib.quote("https://www.youtube.com/watch?v=5-jKIbCMkyA")
     r = web.post(
-        url="https://www.analogue.app/api/contents/parse?url=https:%2F%2Fwww.youtube.com%2Fwatch?v%3D5-jKIbCMkyA",
+        url="https://www.analogue.app/api/contents/parse?url={}".format(url),
         params=None,
         headers={
             "authorization": "Token eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ODUwMywiZXhwIjoxNTk0Nzg1MDY5fQ.qr9HFOlUUqNTV9WassFoVKUuS8fQ08aw05BmLaZzOUw",
