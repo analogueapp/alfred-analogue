@@ -128,4 +128,8 @@ def add_log(log_url):
         data=json.dumps({}),
     )
 
-    return r.json()["content"]["slug"]
+    return "https://www.analogue.app/{}/{}/@{}".format(
+        r.json()["content"]["form"],
+        r.json()["content"]["slug"],
+        r.json()["log"]["user"]["username"],
+    )
