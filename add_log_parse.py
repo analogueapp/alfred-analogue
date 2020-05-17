@@ -16,7 +16,7 @@ if __name__ == u"__main__":
     wf = Workflow()
     log = wf.logger
 
-    if len(wf.args):
+    if wf.args:
         query = wf.args[0]
     else:
         query = None
