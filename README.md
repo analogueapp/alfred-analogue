@@ -1,6 +1,6 @@
 Analogue for Alfred [![CodeFactor](https://www.codefactor.io/repository/github/analogue-app/alfred-analogue/badge)](https://www.codefactor.io/repository/github/analogue-app/alfred-analogue)
 ==============
-
+i
 This workflow lets you manage your Analogue library with Alfred.
 
 ## Features
@@ -8,9 +8,9 @@ This workflow lets you manage your Analogue library with Alfred.
   - `analogue`
 - Add any URL to your library
   - `analogue add {url}`
-- Hotkey to add new links from Chrome, Safari or your clipboard 
+- Hotkey to add new links from Chrome, Safari or your clipboard
   - `+` key (`SHIFT + '='`)
-- Create a new collection 
+- Create a new collection
   - `analogue create {title}`
 - Search Analogue for people or content
   - `analogue search {query}`
