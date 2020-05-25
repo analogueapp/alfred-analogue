@@ -3,6 +3,11 @@ Analogue for Alfred [![CodeFactor](https://www.codefactor.io/repository/github/a
 
 This workflow lets you manage your Analogue library with Alfred.
 
+## Installation
+- Download/Install Alfred 4
+- Download lastest workflow (.alfredworkflow file) from the [releases](https://github.com/analogue-app/alfred-analogue/releases) page
+- Open the `.alfredworkflow` file to import it into Alfred
+
 ## Features
 
 - [X] Goto analogue.app via browser `analogue`
