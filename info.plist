@@ -174,7 +174,7 @@
 				<key>subtext</key>
 				<string>analogue users</string>
 				<key>title</key>
-				<string>analogue users</string>
+				<string>Search for analogue users</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -195,9 +195,9 @@
 				<key>keyword</key>
 				<string>analogue</string>
 				<key>subtext</key>
-				<string></string>
+				<string>analogue</string>
 				<key>text</key>
-				<string>goto analogue</string>
+				<string>Go to analogue</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -254,9 +254,9 @@
 				<key>keyword</key>
 				<string>analogue profile</string>
 				<key>subtext</key>
-				<string></string>
+				<string>analogue profile</string>
 				<key>text</key>
-				<string>Goto analogue profile</string>
+				<string>Goto profile page</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -343,9 +343,9 @@
 				<key>keyword</key>
 				<string>analogue activity</string>
 				<key>subtext</key>
-				<string></string>
+				<string>analogue activity</string>
 				<key>text</key>
-				<string>Check analogue actvity</string>
+				<string>Check activity/notifications</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -381,11 +381,11 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>analogue auth</string>
+				<string>analogue login</string>
 				<key>subtext</key>
-				<string>analogue auth</string>
+				<string></string>
 				<key>text</key>
-				<string>analogue auth</string>
+				<string>Login into analogue</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -459,7 +459,7 @@ echo -n "username here"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>analogue content</string>
+				<string>analogue logs</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -469,7 +469,7 @@ echo -n "username here"</string>
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>grabbing data</string>
+				<string>grabbing user information...</string>
 				<key>script</key>
 				<string>python search_user_logs.py</string>
 				<key>scriptargtype</key>
@@ -477,9 +477,9 @@ echo -n "username here"</string>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>analogue content</string>
+				<string>analogue logs</string>
 				<key>title</key>
-				<string>analogue content</string>
+				<string>Search personal logs</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
