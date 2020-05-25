@@ -1,6 +1,5 @@
 Analogue for Alfred [![CodeFactor](https://www.codefactor.io/repository/github/analogue-app/alfred-analogue/badge)](https://www.codefactor.io/repository/github/analogue-app/alfred-analogue)
 ==============
-i
 This workflow lets you manage your Analogue library with Alfred.
 
 ## Features
