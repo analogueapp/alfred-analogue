@@ -4,40 +4,28 @@ Analogue for Alfred [![CodeFactor](https://www.codefactor.io/repository/github/a
 This workflow lets you manage your Analogue library with Alfred.
 
 ## Features
-- Access your Analogue profile
-  - `analogue`
-- Add any URL to your library
-  - `analogue add {url}`
-- Hotkey to add new links from Chrome, Safari or your clipboard 
-  - `+` key (`SHIFT + '='`)
-- Create a new collection 
-  - `analogue create {title}`
-- Search Analogue for people or content
-  - `analogue search {query}`
-- Search your library
-  - `analogue content {query}`
 
-V1 - Basics
-- [ ] Goto analogue front page `analogue`
-- [ ] Goto analogue feed `analogue feed`
-- [ ] Goto current user [your] profile `analogue profile`
-- [ ] Goto activity/notification page `analogue activity`
-- [ ] Goto collections `analogue col books`
-- [ ] Goto user `analogue user rojo`
-- [ ] Create log `analogue add {link}`
+- [X] Goto analogue.app via browser `analogue`
+- [X] Add any URL to your library `analogue add {url}`
+- [X] Search Analogue for people or content `analogue search {query}`
+- [X] View to 10 entries in your library `analogue content`
+- [X] Goto current user [your] profile `analogue profile`
+- [X] Goto activity/notification page `analogue activity`
+- [X] Goto user `analogue user rojo`
+- [X] Create log `analogue add {link}`
+- [X] Create a new collection `analogue create {title}`
+- [X] Search Analogue for content `analogue search {query}`
+
+## Todo
 - [ ] Create a new collection `analogue create {title}`
-- [ ] Search Analogue for people or content `analogue search {query}`
-- [ ] Search your library `analogue content {query}`
-
-V2 - Fun
-
+- [ ] Goto collections `analogue col books`
 - [ ] Feeling lucky (picks a random log off of analogue) `analogue random`
+- [ ] Search your library `analogue content {query}`
 - [ ] Give a book recommendation `analogue recommend book`
     - This could develop into other content types (shows, videos, etc)
 - [ ] Create log `analogue add {link}` with type ahead
 - [ ] Goto collections `analogue col books` with type ahead
-- [ ] Navigate collections
-  - `analogue collection {query}`
+- [ ] Navigate collections `analogue collection {query}`
     - returns autocomplete of your collections
     - Arrow key up/down to a collection
       - `Enter` to open browser to collection
@@ -45,15 +33,6 @@ V2 - Fun
 - [ ] Uses OAuth 2.0 to authorize the workflow
 - [ ] Saves your access_token securely in OS X's keychain
 
-## Todo
-
-### Version 0.1
-- [x] Set up repo and README
-- [ ] Define feature set
-- [ ] Create initial codebase based on [alfred-pocket](https://github.com/fniephaus/alfred-pocket)
-- [ ] Integrate Analogue auth with [alfred-workflow](https://github.com/deanishe/alfred-workflow)
-- [ ] Build `analogue` command to open profile
-- [ ] Build `analogue add` command for adding URLs
 
 ## Credits
 
