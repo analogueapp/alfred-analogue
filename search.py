@@ -47,11 +47,6 @@ def main(wf):
     thumbs.save_queue()
     if thumbs.has_queue:
         thumbs.process_queue()
-        # TODO: run in background
-        # if not is_running('generate_thumbnails'):
-        #     run_in_background('generate_thumbnails',
-        #                       ['/usr/bin/python',
-        #                        wf.workflowfile('thumbnails.py')])
 
     return 0
 
