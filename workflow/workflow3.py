@@ -94,8 +94,7 @@ class Variables(dict):
         if not self and not self.config:
             if self.arg:
                 return self.arg
-            else:
-                return ""
+            return ""
 
         return json.dumps(self.obj)
 
@@ -365,11 +364,7 @@ class Item3(object):
 
         """
         # Required values
-        o = {
-            "title": self.title,
-            "subtitle": self.subtitle,
-            "valid": self.valid,
-        }
+        o = {"title": self.title, "subtitle": self.subtitle, "valid": self.valid}
 
         # Optional values
         if self.arg is not None:
@@ -756,7 +751,7 @@ class Workflow3(Workflow):
             Item3: Newly-created item.
 
         """
-        if len(self._items):
+        if self._items:
             return
 
         icon = icon or ICON_WARNING
