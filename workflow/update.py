@@ -472,15 +472,11 @@ def check_update(repo, current_version, prereleases=False, alfred_version=None):
     """
     key = "__workflow_latest_version"
     # data stored when no update is available
-    no_update = {
-        "available": False,
-        "download": None,
-        "version": None,
-    }
+    no_update = {"available": False, "download": None, "version": None}
     current = Version(current_version)
 
     dls = get_downloads(repo)
-    if not len(dls):
+    if not dls:
         wf().logger.warning("no valid downloads for %s", repo)
         wf().cache_data(key, no_update)
         return False
@@ -498,7 +494,7 @@ def check_update(repo, current_version, prereleases=False, alfred_version=None):
 
     if dl.version > current:
         wf().cache_data(
-            key, {"version": str(dl.version), "download": dl.dict, "available": True,}
+            key, {"version": str(dl.version), "download": dl.dict, "available": True}
         )
         return True
 
@@ -514,11 +510,7 @@ def install_update():
     """
     key = "__workflow_latest_version"
     # data stored when no update is available
-    no_update = {
-        "available": False,
-        "download": None,
-        "version": None,
-    }
+    no_update = {"available": False, "download": None, "version": None}
     status = wf().cached_data(key, max_age=0)
 
     if not status or not status.get("available"):
