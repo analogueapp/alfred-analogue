@@ -282,11 +282,7 @@ def set_config(name, value, bundleid=None, exportable=False):
     """
     bundleid = bundleid or os.getenv("alfred_workflow_bundleid")
     appname = jxa_app_name()
-    opts = {
-        "toValue": value,
-        "inWorkflow": bundleid,
-        "exportable": exportable,
-    }
+    opts = {"toValue": value, "inWorkflow": bundleid, "exportable": exportable}
 
     script = JXA_SET_CONFIG.format(
         app=json.dumps(appname),
@@ -490,7 +486,7 @@ class LockFile(object):
             except (IOError, OSError):  # pragma: no cover
                 pass
 
-            return True
+        return True
 
     def __enter__(self):
         """Acquire lock."""

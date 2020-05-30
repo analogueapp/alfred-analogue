@@ -9,7 +9,6 @@ def search_user_logs(username):
     search current user logs/content
     """
     url = "https://www.analogue.app/api/logs"
-    # Todo: Get username via the env config or using auth
     params = dict(username=username, tag="", limit=10, offset=0, collection=True)
     r = web.get(url, params)
 
@@ -25,7 +24,6 @@ def search_analogue(query):
     """
     Search all of analogue for a specific piece of content
     """
-    # TODO: host this under a proper microservice
     url = "https://pysrv.now.sh/analogue/search"
 
     # TODO: Get username via the env config or using auth
@@ -47,10 +45,8 @@ def search_analogue_users(query):
     """
     Search all of analogue for a specific piece of content
     """
-    # TODO: host this under a proper microservice
     url = "https://pysrv.now.sh/analogue/users"
 
-    # TODO: Get username via the env config or using auth
     params = dict(q=query)
 
     r = web.get(url, params)
