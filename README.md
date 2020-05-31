@@ -12,14 +12,12 @@ This workflow lets you manage your Analogue library with Alfred.
 
 - [X] Goto analogue.app via browser `analogue`
 - [X] Add any URL to your library `analogue add {url}`
-- [X] Search Analogue for people or content `analogue search {query}`
+- [X] Search Analogue for for content `analogue search {query}`
 - [X] View to 10 entries in your library `analogue content`
 - [X] Goto current user [your] profile `analogue profile`
 - [X] Goto activity/notification page `analogue activity`
-- [X] Goto user `analogue user rojo`
-- [X] Create log `analogue add {link}`
-- [X] Create a new collection `analogue create {title}`
-- [X] Search Analogue for content `analogue search {query}`
+- [X] Goto user `analogue user {userName}`
+- [X] Login into analogue `analogue login`
 
 ## Todo
 - [ ] Create a new collection `analogue create {title}`
