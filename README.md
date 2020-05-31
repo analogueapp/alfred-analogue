@@ -7,6 +7,14 @@ This workflow lets you manage your Analogue library with Alfred.
 - Download/Install Alfred 4
 - Download lastest workflow (.alfredworkflow file) from the [releases](https://github.com/analogue-app/alfred-analogue/releases) page
 - Open the `.alfredworkflow` file to import it into Alfred
+- Goto alfred preferences > workflows
+- Click on analogue. Then in top right corner click the following symbol `[x]`
+- Add 2 new `Workflow Environment Variables`
+    - email: {analogue_email}
+    - password: {analogue_password}
+- Click `Save` at the bottom of the box
+- Inside the alfred search bar run `analogue login`
+- Fin!
 
 ## Features
 
