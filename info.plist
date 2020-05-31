@@ -320,9 +320,9 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Start typing to search for content on Analogue</string>
+				<string>Start typing to search for content on analogue</string>
 				<key>title</key>
-				<string>Search Analogue</string>
+				<string>Search analogue</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -383,7 +383,7 @@
 				<key>keyword</key>
 				<string>analogue login</string>
 				<key>subtext</key>
-				<string></string>
+				<string>analogue login</string>
 				<key>text</key>
 				<string>Login into analogue</string>
 				<key>withspace</key>
@@ -542,9 +542,9 @@ echo -n "username here"</string>
 				<key>keyword</key>
 				<string>analogue add</string>
 				<key>subtext</key>
-				<string></string>
+				<string>analogue add</string>
 				<key>text</key>
-				<string>Save url/log to Analgoue</string>
+				<string>Save url/log to analogue</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
